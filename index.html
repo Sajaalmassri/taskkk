@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Template</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        header {
+            background: url(CSS-Lesson-5-Assignment-4/assets/img/hero.jpg) no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+
+        }
+
+        header nav {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        header nav a {
+            margin: 0 10px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header h1 {
+            font-size: 48px;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .blue-line {
+            width: 150px;
+            height: 2px;
+            background-color: #3498db;
+            margin: 20px auto;
+        }
+
+        section {
+            padding: 40px 10%;
+            text-align: center;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .image-container img {
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .img-1 {
+            width: 300px;
+            height: 250px;
+        }
+
+        .img-2 {
+            width: 450px;
+            height: 250px;
+        }
+
+        .img-3 {
+            width: 400px;
+            height: 250px;
+        }
+
+        .img-4 {
+            width: 300px;
+            height: 250px;
+        }
+
+        @media (max-width: 768px) {
+            .image-container img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .features div {
+            flex: 1;
+            min-width: 200px;
+            padding: 15px;
+        }
+
+        .newsletter {
+            background: #f0f0f0;
+            padding: 20px;
+        }
+
+        .newsletter input {
+            padding: 10px;
+            width: 50%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .newsletter button {
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 32px;
+            }
+
+            .features {
+                flex-direction: column;
+            }
+
+            .newsletter input {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+
+        .footer {
+            background-color: #3a4145;
+            color: #cfcfcf;
+            text-align: center;
+            padding: 20px 10px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .footer .highlight {
+            color: #219774;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Website Logo</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About</a>
+            <a href="#">Contacts</a>
+        </nav>
+        <h1>Responsive Template Page</h1>
+        <p>Full Stack Training Course</p>
+        <a href="#" class="btn">DOWNLOAD IT HERE</a>
+    </header>
+
+    <section class="work">
+        <h2>Some Of Our Work</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, totam? Nisi, sapiente nihil eveniet
+            voluptates rerum quis ipsam facilis sint aut vel, repellendus consectetur nesciunt placeat velit, fuga iure
+            commodi?</p>
+        <br>
+        <div class="blue-line"></div><br>
+        <div class="image-container">
+            <img src="CSS-Lesson-5-Assignment-4/assets/img/coast.jpg" alt="Work 1" class="img-1">
+            <img src="CSS-Lesson-5-Assignment-4/assets/img/island.jpg" alt="Work 2" class="img-2">
+            <img src="CSS-Lesson-5-Assignment-4/assets/img/balloon.jpg" alt="Work 3" class="img-3">
+            <img src="CSS-Lesson-5-Assignment-4/assets/img/mountain.jpg" alt="Work 4" class="img-4">
+        </div>
+
+    </section>
+
+    <section>
+        <h2>Features And Services</h2><br><b>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam dolor quia doloremque. Voluptates, ipsam
+                consectetur quia illo, laborum fugiat commodi sunt culpa accusantium recusandae necessitatibus quidem
+                molestiae magni? Accusantium, possimus?</p>
+            <div class="blue-line"></div>
+            <div class="features">
+                <div>
+                    <h3>Photography</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium ipsum necessitatibus minus
+                        accusamus nemo id asperiores dolorum.</p>
+                </div>
+                <div>
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium ipsum necessitatibus minus
+                        accusamus nemo id asperiores dolorum.</p>
+                </div>
+                <div>
+                    <h3>Content Editing</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium ipsum necessitatibus minus
+                        accusamus nemo id asperiores dolorum.</p>
+                </div>
+            </div>
+    </section>
+    <br><br><br>
+
+    <section class="newsletter">
+        <h2>Join Our Newsletter</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam impedit pariatur debitis odit nam eveniet
+            dolore harum possimus. Iure id.</p><br>
+        <div class="blue-line"></div><br>
+        <input type="email" placeholder="Email">
+        <button>SUBSCRIBE NOW</button>
+    </section>
+
+    <footer class="footer">
+        <p>MADE BY <span class="highlight">TUTORIALZINE</span>. IMAGES COURTESY TO <span
+                class="highlight">UNSPLASH</span>.</p>
+        <p>NO ATTRIBUTION REQUIRED. YOU CAN REMOVE THIS FOOTER.</p>
+    </footer>
+</body>
+
+</html>
